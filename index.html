@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CameraStore</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">	
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/jssor.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.css">
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="js/jssor.js"></script>
+    
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortuct icon" href="img/meta-icon.png">
+	<meta name="description" content="RWD作業">
+	<meta property="og:title" content="RWD作業">
+	<meta property="og:description" content="RWD作業">
+	<meta property="og:url" content="#">
+	<meta property="og:image" content="img/gallery/slider01.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+	<header class="bg-white border-top-width border-top-secondary border-bottom border-bottom-primary">
+		<div class="container">
+			<ul class="d-flex justify-content-between text-size-14 height-s align-items-center text-primary2 flex-l-direction height-l-0">
+				<li class="my-l-1">
+					<ul class="d-flex align-items-center d-sm-block">
+						<li class="mr-5 mr-xl-0 d-flex align-items-center line-sm-height-30">
+							<span>Language:</span>
+							<span>
+								<select class="border-0 text-secondary2">
+								<option value="English">English</option>
+								<option value="Taiwanese">Taiwanese</option>
+							</select>
+							</span>
+						</li>
+						<li class="mr-5 mr-xl-0 d-flex align-items-center line-sm-height-30">
+							<span>Currency:</span>
+							<span>
+								<select class="border-0 text-secondary2">
+									<option value="EUR">EUR</option>
+									<option value="NTD">NTD</option>
+								</select>
+							</span>
+						</li>
+						<li class="line-sm-height-30">
+							Telephobe:<span class="text-secondary2 ml-s"> +565 975 658</span>
+						</li>
+					</ul>
+				</li>
+				<li class="my-l-1">
+					<ul class="d-flex">
+						<li class="border-right-width px-1 px-s-1"><a class="text-primary" href="#">My Account</a></li>
+						<li class="border-right-width px-1 px-s-1"><a class="text-primary" href="#">Login</a></li>
+						<li class="border-right-width px-1 px-s-1"><a class="text-primary" href="#">Resister</a></li>
+						<li class="pl-1"><a class="text-primary" href="#">Checkout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+		<ul class="d-flex justify-content-between height-2xl align-items-center flex-l-direction height-l-0">
+			<li class="my-l-1">
+				<h1><a class="logo" href="index.html">CameraStore</a></h1>
+			</li>
+			<li class="d-flex my-l-1 flex-sm-direction-column flex-sm-align-items-center">
+				<span class="d-flex mr--5 search pos-r border-width border-primary rounded bg-white pr-4 mr-sm-0">
+					<input id="search" class="border-0 rounded p-1 rounded-right-0" placeholder="search">
+					<label for="search" class="pos-a search-pos"><img class="bg-primary rounded border-left-0" src="img/searchIcon.png" alt=""></label>
+				</span>
+				<span class="mt-sm-1">
+					<a href="#"><img class="bg-primary rounded" src="img/rssIcon.png" alt=""></a>
+					<a href="#"><img class="bg-primary rounded" src="img/pinterestIcon.png" alt=""></a>
+					<a href="#"><img class="bg-primary rounded" src="img/facebookIcon.png" alt=""></a>
+					<a href="#"><img class="bg-primary rounded" src="img/twitterIcon.png" alt=""></a>
+					<a href="#"><img class="bg-primary rounded" src="img/ballIcon.png" alt=""></a>
+				</span>								
+			</li>
+		</ul>
+	</div>
+	<div class="container px-0">
+		<div class="line"></div>
+	</div>
+	<div class="container">
+		<ul class="d-flex justify-content-between align-items-center height-l d-block height-xl-0 flex-xl-direction text-m-center p-m-2 ">
+			<li class="my-xl-1">
+				<ul class="d-flex align-items-center flex-m-wrap text-s-size-18">
+					<li class="mr-4 mr-l-15 mr-ml-1 mr-m-0 border-m col-m-6">
+						<a class="text-primary d-block line-height-44 bg-white-hover" href="#">HOME</a>
+					</li>
+					<li class="mr-4 mr-l-15 mr-ml-1 mr-m-0 border-m col-m-6">
+						<a class="text-primary d-block line-height-44 bg-white-hover" href="#">APPAREL</a>
+					</li>
+					<li class="mr-4 mr-l-15 mr-ml-1 mr-m-0 border-m col-m-6">
+						<a class="text-primary d-block line-height-44 bg-white-hover" href="#">FASHION</a>
+					</li>
+					<li class="mr-4 mr-l-15 mr-ml-1 mr-m-0 border-m col-m-6">
+						<a class="text-primary d-block line-height-44 bg-white-hover" href="#">NEWS</a>
+					</li>
+					<li class="mr-4 mr-l-15 mr-ml-1 mr-m-0 border-m col-m-6">
+						<a class="text-primary d-block line-height-44 bg-white-hover" href="#">PORTFOLIO</a>
+					</li>
+					<li class="border-m col-m-6">
+						<a class="text-primary d-block line-height-44 bg-white-hover" href="#">CONTACT US</a>
+					</li>
+				</ul>
+			</li>
+			<li class="my-xl-1 pt-m-2">
+				<button class="btn width-m text-white"><i class="fas fa-shopping-cart fa-lg"></i><span>(0) ITEMS</span></button>
+			</li>
+		</ul>
+	</div>
+	<div class="container mb-6 px-0">
+		<div class="line"></div>
+	</div>
+	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <!-- <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+        </div> -->
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/gallery/slider01.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/gallery/slider02.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/gallery/slider02.png" />
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051 arrow circle border-width" style="width:55px;height:55px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        	<img src="img/arrow-left.png" style="position:absolute;top:10px;left:15px;">
+            
+        </div>
+        <div data-u="arrowright" class="jssora051 arrow circle border-width" style="width:55px;height:55px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <img src="img/arrow-right.png" style="position:absolute;top:10px;right:15px;">
+        </div>
+    </div>
+	<div class="container mb-6 px-0">
+		<ul class="d-flex justify-content-between align-items-center height-xl height-ml bg-white border-bottom border-bottom-primary px-2 flex-m-direction-column text-m-center hight-m-xl hight-sm-xl p-m-2">
+			<li>
+				<h2 class="text-size-32 text-m-size-22">CHECK OUR <strong>AMAZING OFFERS</strong>,VISIT OUR <strong>STORE</strong> NOW</h2>
+			</li>
+			<li>
+				<button class="btn width-l text-white">VISIT THE STORE</button>
+			</li>
+		</ul>
+	</div>
+	<div class="container flex-direction align-items-center mb-2 px-0 prod_list swiper-container overflow-hidden">
+		<div class="title container d-flex align-items-center mb-2">
+			<h3 class="text-size-24 text-bold text-s-size-20">RECEBT PRODUCTS</h3>
+			<div class="line"></div>
+			<div>
+				<button class="btn-page left_arrow">
+					<i class="fas fa-arrow-left fa-xs"></i>
+				</button>
+				<button class="btn-page right_arrow">
+					<i class="fas fa-arrow-right fa-xs"></i>
+				</button>
+			</div>		
+		</div>	
+		<div class="container mb-6 swiper-wrapper pl-0">
+			<div class="row swiper-slide m-0">
+				<div class="col-3 rounded border">
+					<a href="img/r_product01.png" data-lightbox="example-1" data-title="EOS 450D Camera">
+						<img class="rounded image-1" src="img/r_product01.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$899.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">EOS 450D Camera</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+				<div class="col-3 rounded border">
+					<a href="img/r_product02.png" data-lightbox="example-1" data-title="A Set of Camera Lenses">
+						<img class="rounded image-1" src="img/r_product02.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$699.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">A Set of Camera Lenses</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+				<div class="col-3 rounded border">
+					<a href="img/r_product03.png" data-lightbox="example-1" data-title="Professional Camera">
+						<img class="rounded image-1" src="img/r_product03.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$2499.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">Professional Camera</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+				<div class="col-3 rounded border">
+					<a href="img/r_product04.png" data-lightbox="example-1" data-title="EOS 2100D Camera">
+						<img class="rounded image-1" src="img/r_product04.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$5499.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">EOS 2100D Camera</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+			</div>
+		</div>
+	</div>			
+	<div class="container flex-direction align-items-center mb-2 px-0 prod_list swiper-container overflow-hidden">
+		<div class="title container d-flex align-items-center mb-2">
+			<h3 class="text-size-24 text-bold text-s-size-20">FEATURED PRODUCTS</h3>
+			<div class="line"></div>
+			<div>
+				<button class="btn-page left_arrow">
+					<i class="fas fa-arrow-left fa-xs"></i>
+				</button>
+				<button class="btn-page right_arrow">
+					<i class="fas fa-arrow-right fa-xs"></i>
+				</button>
+			</div>		
+		</div>	
+		<div class="container mb-6 swiper-wrapper pl-0">
+			<div class="row swiper-slide m-0">
+				<div class="col-3 rounded border">
+					<a href="img/f_product01.png" data-lightbox="example-2" data-title="EOS 450D Camera">
+						<img class="rounded image-1" src="img/f_product01.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$2499.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">EOS 450D Camera</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+				<div class="col-3 rounded border">
+					<a href="img/f_product02.png" data-lightbox="example-2" data-title="Photography Umbrealla">
+						<img class="rounded image-1" src="img/f_product02.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$499.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">Photography Umbrealla</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+				<div class="col-3 rounded border">
+					<a href="img/f_product03.png" data-lightbox="example-2" data-title="EOS 450D Camera Lens">
+						<img class="rounded image-1" src="img/f_product03.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$749.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">EOS 450D Camera Lens</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+				<div class="col-3 rounded border">
+					<a href="img/f_product04.png" data-lightbox="example-2" data-title="50 mm Camera Lens">
+						<img class="rounded image-1" src="img/f_product04.png">
+					</a>
+					<div class="row justify-content-between align-items-center m-0 my-10">
+						<div class="price">$5499.99</div>
+						<div class="btn-addCart d-flex justify-content-center align-items-center">ADD TO CART</div>
+					</div>
+					<div class="border-top mx-10"></div>
+					<h4 class="px-1 text-size-18 text-bold mx-10">50 mm Camera Lens</h4>
+					<p class="px-1 text-primary2 text-size-16 line-height-30">Lorem ipsum dolor sit amet, conse adipiscing elit, sed diam nonu mmy mod tincidunt ut lao dolore.</p>
+					<div class="border-top mx-10"></div>
+					<a class="d-flex px-1 text-secondary mx-10" href="#">View the Product ></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container d-flex align-items-center mb-2">
+		<h3 class="text-size-24 text-bold text-s-size-20">CHECK OUR BRANDS</h3>
+		<div class="line"></div>		
+	</div>
+	<div class="container mb-6">
+		<div class="row">
+			<div class="box border box-m box-sm">
+				<a href="#"><img src="img/sponsor01.png"></a>
+			</div>
+			<div class="box border box-m box-sm">
+				<a href="#"><img src="img/sponsor02.png"></a>
+			</div>
+			<div class="box border box-m box-sm">
+				<a href="#"><img src="img/sponsor03.png"></a>
+			</div>
+			<div class="box border box-m box-sm">
+				<a href="#"><img src="img/sponsor04.png"></a>
+			</div>
+			<div class="box border box-m box-sm">
+				<a href="#"><img src="img/sponsor05.png"></a>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-white border-top text-sm-center">
+		<div class="container py-2 text-size-14 line-height-20">
+			<div class="row">
+				<div class="col-3">
+					<img class="mb-2" src="img/logo.png">
+					<h3 class="text-size-24 text-bold mb-2">Follow us</h3>
+					<div>
+						<a href="#"><img class="bg-primary rounded" src="img/rssIcon.png" alt=""></a>
+						<a href="#"><img class="bg-primary rounded" src="img/pinterestIcon.png" alt=""></a>
+						<a href="#"><img class="bg-primary rounded" src="img/facebookIcon.png" alt=""></a>
+						<a href="#"><img class="bg-primary rounded" src="img/twitterIcon.png" alt=""></a>
+						<a href="#"><img class="bg-primary rounded" src="img/ballIcon.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-3">
+					<h3 class="text-size-24 text-bold mb-2">Recent Posts</h3>
+						<div class="posts-box border rounded mb-2 text-primary2">
+							<div class="rounded posts-img posts-img-1"></div>
+							<div class="flex-direction my-auto">
+								<p>New Camera Set</p>
+								<p>posted by Admin</p>
+							</div>							
+						</div>
+						<div class="posts-box border rounded text-primary2">
+							<div class="rounded posts-img posts-img-2"></div>
+							<div class="flex-direction my-auto">
+								<p>Special Camera Lenses</p>
+								<p>posted by Gljivec</p>
+							</div>							
+						</div>	
+				</div>
+				<div class="col-3 flex-1">
+					<h3 class="text-size-24 text-bold mb-2">Contacts</h3>
+					<div class="text-primary2">
+						<p>1000 Ljubljana</p>
+						<p>Celovska cesta 135</p>
+						<p class="mb-2">Country Slovenia</p>
+						<p>Phone: (+386) 40 123 456</p>
+						<p class="mb-2">Moblie: (+386) 40 654 123</p>
+						<p>info@premiumcoding.com</p>
+					</div>					
+				</div>
+				<div class="col-3 flex-2">
+					<h3 class="text-size-24 text-bold mb-2">What People say</h3>
+					<div class="row mb-2 d-flex justify-content-between text-primary2">
+						<div class="col-4 flex-direction align-items-center justify-content-center">
+							<div class="people-img people-img-1 border-width circle"></div>
+							<p class="mt-1">ANNA</p>
+						</div>
+						<div class="col-8 border rounded align-items-center bg-gray p-1 pos-r">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer orci</p>
+							<img class="pos-a double-quote" src="img/double-quote.png">
+						</div>
+					</div>
+					<div class="row justify-content-between text-primary2">
+						<div class="col-4 flex-direction align-items-center justify-content-center">
+							<div class="people-img people-img-2 border-width circle"></div>
+							<p class="mt-1">ERICA</p>
+						</div>
+						<div class="col-8 border rounded align-items-center bg-gray p-1 pos-r">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer orci</p>
+							<img class="pos-a double-quote" src="img/double-quote.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer-nav height-m bg-black border-top-width border-top-secondary height-ml-auto">
+		<div class="container">
+			<ul class="row justify-content-between align-items-center height-s height-ml-auto justify-ml-content-center">
+				<li class="text-size-11 line-ml-height-44">
+					<a class="text-primary mr-1" href="#">HOME</a>
+					<a class="text-primary mr-1" href="#">PORTFOLIO</a>
+					<a class="text-primary mr-1" href="#">SITEMAP</a>
+					<a class="text-primary" href="#">CONTANT</a>
+				</li>
+				<li class="text-primary2 text-size-14 text-s-center pb-ml-1 line-ml-height-20">CameraStore @2013 by PremiumCoding | All Rights Reserved</li>
+			</ul>
+		</div>
+	</div>
+	<div class="btn-gotop d-flex justify-content-center align-items-center">
+		<img src="img/gotop.png">
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+	<script src="js/lightbox-plus-jquery.js"></script>
+	<script src="js/jquery.js"></script> 
+	<script src="js/jquery.nice-select.js"></script>
+	<script src="js/all.js"></script>
+</body>
+</html>
